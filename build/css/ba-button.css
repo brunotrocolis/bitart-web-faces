@@ -1,0 +1,52 @@
+.ba-button {
+    display: inline-block;
+    margin-right: -4px;
+    padding: .375rem .75rem;
+    vertical-align: middle;
+    line-height: 1.5;
+    text-transform: none;
+    border-color: var(--featured-1);
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: var(--featured-1);
+    text-align: center;
+    font-size: 1rem;
+    transition: .15s;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.ba-button[ba-color="2"] {
+    color: #FFFFFF;
+    background-color: var(--featured-2);
+    border-color: var(--featured-2);
+}
+
+.ba-button[ba-type="outline"] {
+    border: 1px solid var(--featured-1);
+    color: var(--featured-1);
+    background-color: transparent;
+}
+
+.ba-button[ba-type="outline"][ba-color="2"] {
+    border: 1px solid var(--featured-2);
+    color: var(--featured-2);
+}
+
+.ba-button:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.ba-button:hover {
+    filter: saturate(150%);
+}
+
+.ba-button:active {
+    filter: saturate(50%);
+}

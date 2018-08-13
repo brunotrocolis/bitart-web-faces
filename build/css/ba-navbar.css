@@ -1,0 +1,51 @@
+.ba-navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: var(--back-1);
+}
+
+.ba-navbar-title {
+    color: var(--text-1);
+    font-size: 1.2rem;
+}
+
+.ba-navbar-title * {
+    vertical-align: middle;
+}
+
+.ba-toggle-menu {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-color: #FFFFFF00;
+    background-image: url(./res/menu.svg);
+    background-size: contain;
+    opacity: .6;
+}
+
+.ba-toggle-menu:hover {
+    opacity: 8;
+}
+
+.ba-navbar .ba-menu {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .ba-navbar .ba-menu {
+        display: inline-block !important;
+        margin-right: -4px;
+        width: auto;
+    }
+    .ba-navbar .ba-menu .ba-menu-item {
+        display: inline-block !important;
+    }
+    .ba-toggle-menu {
+        display: none;
+    }
+}

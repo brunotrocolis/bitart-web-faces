@@ -1,0 +1,75 @@
+.ba-carousel {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ba-slide {
+    display: inline-block;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.ba-carousel[ba-column="2"] .ba-slide {
+    width: 50%;
+}
+
+.ba-carousel[ba-column="3"] .ba-slide {
+    width: calc(100% / 3);
+}
+
+.ba-carousel[ba-column="4"] .ba-slide {
+    width: 25%;
+}
+
+.ba-carousel[ba-column="5"] .ba-slide {
+    width: 20%;
+}
+
+.ba-carousel[ba-column="6"] .ba-slide {
+    width: calc(100% / 6);
+}
+
+.ba-carousel[ba-column="7"] .ba-slide {
+    width: calc(100% / 7);
+}
+
+.ba-carousel[ba-column="8"] .ba-slide {
+    width: 12.5%;
+}
+
+.ba-slide-previous, .ba-slide-next {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 100%;
+    font-size: 4rem;
+    opacity: .6;
+    color: var(--text-1);
+    z-index: 1000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.ba-slide-previous:hover, .ba-slide-next:hover {
+    opacity: 1;
+    color: var(--featured-1);
+}
+
+.ba-slide-next {
+    right: 0;
+}

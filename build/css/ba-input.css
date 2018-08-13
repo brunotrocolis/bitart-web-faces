@@ -1,0 +1,16 @@
+.ba-input {
+    display: inline-block;
+    margin-right: 14px;
+    padding: .375rem .75rem;
+    vertical-align: middle;
+    line-height: 1.5;
+    text-transform: none;
+    border: 1px solid var(--featured-1);
+    font-size: 1rem;
+    transition: .15s;
+    text-decoration: none;
+}
+
+.ba-input[ba-color="2"] {
+    border-color: var(--featured-2);
+}

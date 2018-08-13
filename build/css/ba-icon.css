@@ -1,0 +1,36 @@
+.ba-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.ba-icon[ba-size="x-large"] {
+    width: 128px;
+    height: 128px;
+}
+
+.ba-icon[ba-size="large"] {
+    width: 64px;
+    height: 64px;
+}
+
+.ba-icon[ba-size="medium"] {
+    width: 32px;
+    height: 32px;
+}
+
+.ba-icon[ba-size='small'] {
+    width: 16px;
+    height: 16px;
+}
+
+.ba-icon[ba-size='x-small'] {
+    width: 8px;
+    height: 8px;
+}
+
+.ba-icon[ba-src='nome'] {
+    background-color: #FFFFFF00;
+    background-image: url(../res/);
+    background-size: contain;
+}
