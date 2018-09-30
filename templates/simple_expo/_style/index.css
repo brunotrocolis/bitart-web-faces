@@ -1,0 +1,61 @@
+.banner {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    min-width: 923px;
+    min-height: 300px;
+    margin-left: calc(-461px + 50%);
+}
+
+.banner-card {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.banner-card div {
+    padding: 16px;
+    color: white;
+}
+
+.banner-card div h1 {
+    font-size: 1em;
+}
+
+@media (min-width: 768px) {
+    .banner-card {
+        width: 50%;
+        top: 10%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .banner-card div h1 {
+        font-size: 2em;
+    }
+    .banner img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.services {
+    margin: 16px auto;
+}
+
+.service-card {
+    /* border: solid 1px var(--featured-1); */
+    margin: 8px auto;
+}
+
+.service-card div {
+    padding: 8px;
+}
+
+.service-card div p {
+    text-align: justify;
+}

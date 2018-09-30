@@ -1,0 +1,35 @@
+.ba-alert {
+    padding: .375rem .75rem;
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff;
+}
+
+.ba-alert[ba-type="success"] {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.ba-alert[ba-type="warning"] {
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+}
+
+.ba-alert[ba-type="error"] {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.ba-alert img {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+}
+
+.ba-alert .ba-alert-close {
+    cursor: pointer;
+    float: right;
+}

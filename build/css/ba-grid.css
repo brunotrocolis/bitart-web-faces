@@ -61,6 +61,12 @@
     .ba-grid[ba-column="7"] .ba-grid-item, .ba-grid[ba-column="8"] .ba-grid-item {
         width: calc(100% / 6);
     }
+    .ba-grid[ba-column="30x70"] .ba-grid-item{
+        width: 70%;
+    }
+    .ba-grid[ba-column="30x70"] + .ba-grid-item{
+        width: 30%;
+    }
 }
 
 @media (min-width: 992px) {

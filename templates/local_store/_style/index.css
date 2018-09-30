@@ -1,0 +1,171 @@
+.go-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 4px;
+    background-color: #000;
+    opacity: .5;
+    z-index: 1000;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+}
+
+.logo {
+    transition-duration: 300ms;
+}
+
+.suporte {
+    display: block;
+    height: 137px;
+    transition-duration: 300ms;
+}
+
+.top-bar {
+    color: #FFF;
+    background-color: var(--text-1);
+    padding: 1px;
+    font-size: .8rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.top-bar * {
+    vertical-align: middle;
+}
+
+.logo {
+    max-width: 80%;
+}
+
+.ba-navbar img rect {
+    fill: var(--text-2);
+}
+
+.ba-navbar img:hover rect {
+    fill: var(--featured-1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.main-carousel .ba-slide {
+    position: relative;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    padding: .375rem .75rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.category-carousel .ba-slide {
+    width: 25% !important;
+}
+
+.category-carousel img {
+    display: block;
+    margin: auto;
+    width: 90%;
+    max-width: 64px;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.search {
+    padding: .75rem;
+    text-align: center;
+}
+
+.search input {
+    width: calc(100% - 90px);
+}
+
+.clients {
+    background-color: var(--back-1);
+}
+
+.client-card {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: .375rem .7rem;
+}
+
+.client-card img {
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.client-card h4 {
+    text-align: center;
+}
+
+.contacts {
+    background-color: var(--back-2);
+}
+
+#map {
+    display: block;
+    margin: .375rem .7rem;
+    height: 243px;
+    border: 1px solid var(--featured-1);
+    border-radius: .25rem;
+    overflow: hidden;
+}
+
+.form-message {
+    padding: .375rem .7rem;
+}
+
+.form-message .ba-input {
+    width: 100%;
+    margin-bottom: .7rem;
+    max-height: 6rem;
+}
+
+footer {
+    text-align: center;
+    padding: .375rem .7rem;
+}
+
+footer * {
+    vertical-align: middle;
+}
+
+@media (min-width: 576px) {
+    .slide-text {
+        top: 10%;
+        left: 0;
+        bottom: inherit;
+        width: 40%;
+        padding-left: 10%;
+    }
+    .slide-image {
+        width: 400px;
+        margin-left: 50%;
+    }
+    .search input {
+        max-width: 300px;
+    }
+    .category-carousel .ba-slide {
+        width: 12.5% !important;
+    }
+    .clients .ba-carousel .ba-slide {
+        width: 25% !important;
+    }
+}

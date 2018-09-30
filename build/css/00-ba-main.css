@@ -9,6 +9,13 @@
     --back-2: #e4ebe9;
     --sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bottom: 1000;
+    --middle: 5555;
+    --top: 9999;
+    /*Icons*/
+    --chevron-up: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0gNDUgMjUgUyA1MCAyMCA1NSAyNSBMIDg1IDU1IFMgOTAgNjAgODUgNjUgTCA3NSA3NSBTIDcwIDgwIDY1IDc1IEwgNTUgNjUgUyA1MCA2MCA0NSA2NSBMIDM1IDc1IFMgMzAgODAgMjUgNzUgTCAxNSA2NSBTIDEwIDYwIDE1IDU1IFoiLz4KPC9zdmc+Cg==');
+
+    
 }
 
 .ba-body, [class*="ba-"] {
@@ -36,11 +43,20 @@
     margin-right: -4px;
 }
 
+/* Style */
+
 [ba-style="edge-round"] {
     border-radius: .25rem;
+}
+
+[ba-style="round"] {
+    border-radius: 50%;
 }
 
 [ba-background="lines"] {
     background-color: #e4ebe9;
     background-image: url(res/line-back.svg);
+}
+[ba-color="2"]{
+    color: var(--text-2);
 }
